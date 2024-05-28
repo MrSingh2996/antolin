@@ -1,0 +1,105 @@
+/* General table styling */
+table {
+    width: auto; /* Fit to the data */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    margin-top: 50px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Set padding to 2px */
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: yellow; /* Set background color to yellow */
+    color: black;
+    font-weight: bold; /* Make header bold */
+    font-size: 16px; /* Set header font size to 16px */
+    
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the form elements */
+input[type="text"], button {
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #b100a5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Flexbox container for aligning heading and search bar */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center-content a {
+    text-decoration: none; /* Remove underline from center content links */
+}
+
+/* Center content with gap */
+.center-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Add a 50px gap between items */
+    margin-top: 80px;
+}
+.center-content div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #e6ff00;
+    border-radius: 5px;
+    margin-top: 80px;
+    color: #ab0101;
+    font-size: 35px;
+}
+
+.model_data_list {
+    color: #c50000;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'search_customers' %}">Model Serial Number</a>
+        <a href="{% url 'model_data_list' %}">Model GSM Data</a>
+        <a href="{% url 'admin:login' %}">Admin</a>
+    </nav>
+    <div class="center-content">
+        <a href="{% url 'search_customers' %}">
+            <div>Model Serial Number</div>
+        </a>
+        <a href="{% url 'model_data_list' %}">
+            <div>Model GSM Data</div>
+        </a>
+    </div>
+</body>
+</html>
